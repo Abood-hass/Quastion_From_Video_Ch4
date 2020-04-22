@@ -1,0 +1,20 @@
+
+
+String query = "SELECT * FROM employee"; 
+
+ResultSet rs =  stat.executeQuery(query)
+
+while (rs.next()) { 
+		
+	int update = " new Number Phone" ;
+	int Number_Phone = rs.getDouble("Student_Phone"); 
+	rs.updateDouble("Student_Phone", update); 
+	rs.updateRow(); 
+}
+
+rs.moveToInsertRow(); 
+rs.updateInt("Student_ID", ID);
+rs.updateString("Student_Name", Name); 
+rs.updateInt("Student_Grade", Grade); 
+rs.updateInt("Student_Phone", Phone); 
+rs.insertRow();

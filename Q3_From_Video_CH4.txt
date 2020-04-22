@@ -1,0 +1,3 @@
+int id = Integer.parseInt(ID_Field.getText());
+String sql = "DELETE FROM table_name Where sID = "+id+";";
+this.statement.executeUpdate(sql);

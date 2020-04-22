@@ -1,0 +1,12 @@
+PreparedStatement stmt=con.prepareStatement("insert into student values(id,name,major,grade)");
+
+//(query)يتم الإضافة حسب ترتيب الصفات في ال
+
+
+stmt.setInt(1,101);
+
+stmt.setString(2,"Abood");
+
+stmt.setString(3,"CoumputerSicnece");
+
+stmt.setDouble(4,73.6);

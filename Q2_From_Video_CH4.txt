@@ -1,0 +1,17 @@
+@FXML
+private TableView<Student> TableView_Student;
+@FXML
+private TableColumn<Student, Integer> ID_Column_STD;
+@FXML
+private TableColumn<Student, String> Name_Column_STD;
+@FXML
+private TableColumn<Student, String> Major_Column_STD;
+@FXML
+private TableColumn<Student, Double> Grade_Column_STD;
+
+
+//// The Cloumns //////////////////////////////////////// The Attributes
+ID_Column_STD.setCellValueFactory(new PropertyValueFactory("id"));
+Name_Column_STD.setCellValueFactory(new PropertyValueFactory"name"));
+Major_Column_STD.setCellValueFactory(new PropertyValueFactory("major"));
+Grade_Column_STD.setCellValueFactory(new PropertyValueFactory("grade"));
